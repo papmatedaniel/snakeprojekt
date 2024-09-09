@@ -1,0 +1,52 @@
+Pap Máté Dániel.
+Játék projekt specifikáció:  Snake(Kígyó):
+
+
+Cél: A snake játék megvalósítása:
+
+Játékterület: Téglalap alakú 10x10-es cellás terület, ahol a kígyó mozog.
+
+A kígyó: A kígyó koordinátáit egy tömbe mentjük. A kígyó több egységből áll, kezdetben 3 cella hoszzú. Minden egyes étel elfogyasztásával nő egy cellával.
+
+Az étel: Az étel véletlenszerűen jelenik meg a játékterületen belül, a kígyó testén kívül.
+
+A mozgás: A vezérlés nyilakkal történik(fel, le, bal, jobb). A kígyó folyamatosan halad az előzőleg megadott irányba.   A kígyó testének koordinátáit automatikusan frissítjük.
+
+Játék vége: A játék akkor ér véget, ha neki megy a falnak a kígyó, vagy ütközik a testével.
+
+Pontszám: Az elfogyasztott étel után a játékos pontot kap, a pontszám a játék végéig növekszik. 
+
+Logikai megvalósítás: 
+
+
+
+A kígyó és a játékterület reprezentációja:
+	A játék terület egy 2 dimenzós tömb. Később grafikus változatban egy grafikus ablak.
+	A kígyó egy tömb, amely a testének koordinátáit tárolja el(x,y)
+
+A kígyó mozgása:
+	A kígyó feje, az első eleme a tömbnek, és minden mozgásnál új fej adódik a tömb elejére.
+	Amennyiben a kígyó nem fogyaszt el ételt, a kígyó utolsó eleme eltávolításra kerül, hogy a kígyó hossza változatlan maradjon.
+
+Az étel elfogyasztása:
+	Amikor az étel egybeesik a kígyó fejének pozíciójával, akkor a kígyó teste nő az étel koorditáján, és az utolsó elem nem kerül törlésre.
+	Amikor elfogyasztotta az ételt, akkor új étel generálódik le véletlenszerű pozícióba.
+
+Az ütközés ellenőrzése:
+	Ha a kígyó feje túllépi a minimum/maximum koordinátát vízszintes(x) vagy függőleges(y) tengelyen, akkor a játék véget ér. 
+	Ha a kígyó fejének koordinátája egyezik a kígyó további koordinátáinak egyikével, akkor a kígyó saját magával ütközött, és véget ér a játék.
+
+
+A játék frissítése.
+	A játék ciklikusan frissül(pl 1 képkocka/ 0.1 másodperc sebességgel), ahol a kígyó mozog, az étel generálódik, és a pontszám növekszik.
+
+
+A játék menete:
+1. Inicializáljuk a játékterületet, a kígyó kezdő helyzetét és az első ételt.
+2. A játék futása:
+	A nyilak megnyomásával elindul a kígyó.
+	Frissíteni kell a kígyó pozícióját az irány alapján.
+	Az ütközéseket ellenőrizni kell(falak, önmaga)
+	Ha a kígyó ételt talál, a test növelése és a pontszám növelése.
+	A kígyó és a játékterület(kígyó, étel) újrarajzolása.
+3. Ha a kígyó ütközik, véget ér a játék, és megjelenítődik a pontszám, és az új játék lehetősége, vagy a kilépés.
