@@ -1,0 +1,16 @@
+A rendszer részletes fizikai rendszertervének elkészítése. 
+A fizikai rendszertervnek legalább a következő tartalommal kell rendelkeznie: 
+	 Szoftver környezet függőségek 
+	Tervezett modulok és eljárások : Név és magyarázat; az adott programozási környezet modulok, funkciók felsorolása, magyarázata.
+	Képernyőkhöz kapcsolódó alkalmazás funkciók 
+	Tábla terv és függőségek: Adatmodell, indexek, constraintek, egyedi kulcsok, idegen kulcsok. 	Adatáramlási terv: mély szintű, amennyiben tervezést igényel.
+	Folyamatok: Képernyő folyamatok, háttér folyamatok (nagy tömeges háttér feldolgozás, job-ok)
+	Interfészek: Interfészek részletes fizikai specifikációja.
+A rendszer részletes logikai rendszertervének elkészítése. 
+A logikai rendszertervnek legalább a következő tartalommal kell rendelkeznie:
+	Logikai rendszermodulok: Milyen fő részekből fog felépülni a rendszer, mik a függőségek. 	Menüpontok és a hozzá kapcsolódó jogosultságok meghatározása
+	Képernyőterv : beviteli mezők meghatározása, ellenőrzési pontok, paraméterek, gombok elnevezése, funkciója, érték listák meghatározása, képernyő elrendezések
+	Adattárolás: Magas szintű logikai adatmodell (ha több táblában is tárolni kell adatot), vagy tárolandó adatokhoz tábla terv.
+	Folyamat leírás: Folyamat ábra.  Adatfolyam: Honnan nyerjük az adatot?
+	Interfészek: Interfészek logikai specifikációja.
+	Üzemeltetés: Üzemeltetési hatások, l. növekedési igények, processor kapacitás, disk igény, hálózati igények (pl. tűzfalon átjutás), szükséges-e egyedi adatmentés, milyen egyéb módon hat az üzemeltetésre: pl. log-ok módosulása, stb.
