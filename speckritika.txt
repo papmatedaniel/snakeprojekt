@@ -1,0 +1,18 @@
+Vélemény Pap Máté rendszertervére
+Ellenőrizte Berta György
+
+Nem elég részletes kifejtés, nincs kifejtve, hogy hogyan is fog működni a játék.
+A képességek résznél nincs kifejtve, hogy ezek a képességek,
+hogy fogják megváltoztatni a pályát minden egyes ilyen képesség felvételekor,
+ezek gyakorisága sincs tisztázva. A főbb műveletek leírása megfelelő.
+Nincs leírva a logikai rendszerterv.
+
+Fejlesztésre, részletezésre szorul a rendszerterv.
+10/7
+
+
+
+Vélemény György munkájáról
+Nincs kezelve a döntetlen
+Nincs kezelve a teli tábla
+Nincs nehézség választás
